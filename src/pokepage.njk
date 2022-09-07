@@ -3,7 +3,7 @@ layout: layouts/base.njk
 title: "Pokemon Fetch Page"
 description: "This is where the pokemon will populate"
 ---
-
+<h1>{{ title }}</h1>
 {% for pokemon in pokemon.results %}
     <div class="pokeCard">
         <a class="" href="{{ "/pokemon/" + pokemon.name }}">{{pokemon.name}}</a>
