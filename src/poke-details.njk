@@ -1,0 +1,11 @@
+---
+pagination:
+    data: pokemon.results
+    size: 1
+    alias: pokemon
+permalink: "pokemon/{{pokemon.name | slug}}/"
+layout: layouts/base.njk
+---
+
+<li>{{pokemon.name}}</li>
+<a href="/pokepage">Back to the pokeDump page</a>
